@@ -1,56 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PrayFor - Ora por alguien</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <div class="container">
-    <h1>PrayFor</h1>
-    <p>Comparte una oración. Recibe otra.</p>
-
-    <form id="prayerForm">
-      <input type="text" id="name" name="name" placeholder="Tu nombre (opcional)" />
-      <textarea id="petition" name="petition" rows="4" placeholder="Escribe tu oración aquí..." required></textarea>
-      <button type="submit">Enviar oración</button>
-    </form>
-
-    <div id="responseCard" class="card" style="display:none;">
-      <h2>Ora por alguien más</h2>
-      <p id="responseText">Aquí aparecerá una oración de otra persona...</p>
-      <button onclick="getAnother()">Orar por otra persona</button>
-    </div>
-  </div>
-
-  <script>
-    const form = document.getElementById("prayerForm");
-    const card = document.getElementById("responseCard");
-    const responseText = document.getElementById("responseText");
-
-    const samplePrayers = [
-      "Pido fuerzas para superar mi ansiedad.",
-      "Oro por la salud de mi madre.",
-      "Necesito claridad para tomar decisiones difíciles.",
-      "Pido que me llegue trabajo pronto.",
-      "Que pueda perdonar a quienes me han herido."
-    ];
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const randomPrayer = samplePrayers[Math.floor(Math.random() * samplePrayers.length)];
-      responseText.textContent = randomPrayer;
-      card.style.display = "block";
-      form.reset();
-    });
-
-    function getAnother() {
-      const randomPrayer = samplePrayers[Math.floor(Math.random() * samplePrayers.length)];
-      responseText.textContent = randomPrayer;
-    }
-  </script>
-
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OraUno</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
