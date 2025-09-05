@@ -1,34 +1,44 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background: #e8f0fe; /* azul pastel claro */
+  background: #e8f0fe; /* azul pastel de fondo */
 }
 
 .container {
   max-width: 600px;
   margin: 60px auto;
-  padding: 20px;
+  padding: 30px;
   background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+h1 {
+  color: #2a4d91; /* tono más profundo de azul */
+  margin-bottom: 10px;
+}
+
+p {
+  color: #4a4a4a;
+  margin-bottom: 20px;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 12px;
-  margin: 12px 0;
+  padding: 12px 14px;
+  margin: 10px 0;
   font-size: 16px;
-  border: 1px solid #b0c4de; /* azul suave */
-  background-color: #f0f7ff;  /* fondo celeste claro */
+  border: 1px solid #cbdaf0;
   border-radius: 8px;
-  transition: border-color 0.3s ease;
+  background-color: #f0f6ff;
+  transition: border-color 0.2s ease-in-out;
 }
 
 input:focus,
 textarea:focus {
-  border-color: #6495ed; /* azul cornflower */
+  border-color: #a0c2f5;
   outline: none;
 }
 
@@ -36,21 +46,22 @@ button {
   padding: 12px 24px;
   font-size: 16px;
   border: none;
-  background-color: #4a90e2; /* azul pastel */
+  background-color: #6699ff; /* azul suave */
   color: white;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease-in-out;
 }
 
 button:hover {
-  background-color: #357ABD; /* tono un poco más fuerte al pasar el mouse */
+  background-color: #4d88ff;
 }
 
 .card {
-  background: #f5faff; /* fondo tipo tarjeta en azul muy claro */
+  background: #f3f7ff;
   padding: 20px;
   margin: 20px 0;
-  border-radius: 10px;
-  border-left: 5px solid #a1cfff; /* pequeño toque decorativo en azul */
+  border-radius: 12px;
+  color: #2f3e5c;
+  border: 1px solid #d0e0fa;
 }
