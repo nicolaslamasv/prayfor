@@ -1,0 +1,12 @@
+{
+  "name": "prayfor",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'Nothing to build for static site.'"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
