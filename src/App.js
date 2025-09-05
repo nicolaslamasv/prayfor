@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./style.css";
+import './style.css';
 
 function App() {
   const [submitted, setSubmitted] = useState(false);
